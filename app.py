@@ -37,7 +37,7 @@ def initialize_qa_chain(file_id):
 
     vectorstore = Chroma.from_documents(documents, embeddings)
 
-    qa = ConversationalRetrievalChain.from_llm(OpenAI(temperature=0), vectorstore.as_retriever())
+    qa = ConversationalRetrievalChain.from_llm(OpenAI(temperature=0), vectorstore.as_retriever(search_kwargs={"k": 1}))
     
     print("QA chain initialized with file_id: ", file_id)
 # Function to answer questions
