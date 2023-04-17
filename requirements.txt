@@ -1,0 +1,8 @@
+flask
+flask_cors
+gunicorn
+langchain
+chromadb
+tiktoken
+docx2txt
+pypdf2
