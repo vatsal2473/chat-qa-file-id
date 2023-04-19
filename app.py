@@ -45,12 +45,14 @@ def answer_question(query):
 
 @app.route('/analyze_documents', methods=['POST'])
 def analyze_documents():
-    global documents
+    global documents, chat_history
     file_id = request.form.get('file_id')
     initial_query = request.form.get('initial_query', default="")
     file = request.files['file']
     filename = file.filename
     # file.save(filename)
+
+    chat_history = []
 
     file.save(os.path.join('data/all_files', filename))
 
@@ -100,10 +102,13 @@ def chatqa():
     global chat_history
     query = request.form.get('query')
     file_id = request.form.get('file_id')
+    starting_prompt = request.form.get('starting_prompt', default="Answer the question in detail, and if you dont know the answer just answer 'i dont know the answer' also add new line characters whereever necessary, Question: ")
+    print("===> starting prompt: ", starting_prompt)
+    
     chat_history = []
     initialize_qa_chain(file_id)
 
-    adv_query = "Answer the question in detail, and if you dont know the answer just answer 'i dont know the answer', Question: " + query
+    adv_query = starting_prompt + ' ' +query
     answer = answer_question(adv_query)
 
     check_sentence = "i don't know the answer"
@@ -111,7 +116,9 @@ def chatqa():
     similarity = answer['answer'].lower().find(check_sentence)
     if similarity != -1:
         print("===> answer not there in pdf")
-        answer['answer'] = chat_gpt.answer_question(query)
+        answer['answer'] = chat_gpt.answer_notthere_question(query)
+
+    # answer['answer'] = chat_gpt.add_newline_and_format_response(answer['answer'])
 
     return jsonify(answer)
 
