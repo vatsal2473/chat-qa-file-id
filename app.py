@@ -51,6 +51,7 @@ def analyze_documents():
     file = request.files['file']
     filename = file.filename
     # file.save(filename)
+    starting_prompt = request.form.get('starting_prompt', default="Answer the question in detail, and if you dont know the answer just answer 'i dont know the answer' also add new line characters whereever necessary, Question: ")
 
     chat_history = []
 
@@ -88,8 +89,11 @@ def analyze_documents():
     initialize_qa_chain(file_id)
 
     if initial_query == "":
-        initial_query = "Give a brief about the document."
+        initial_query = starting_prompt+ " " +"Give a brief about the document."
         print("===> initial query is empty")
+    else:
+        initial_query = starting_prompt + " " + initial_query
+        print("===> initial query is not empty")
     print(initial_query)
     
     answer = answer_question(initial_query)
