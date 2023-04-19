@@ -47,7 +47,7 @@ def answer_question(query):
 def analyze_documents():
     global documents
     file_id = request.form.get('file_id')
-    initial_query = request.form.get('initial_query')
+    initial_query = request.form.get('initial_query', default="")
     file = request.files['file']
     filename = file.filename
     # file.save(filename)
@@ -82,8 +82,13 @@ def analyze_documents():
     with open(f'pkl_files/{file_id}.pkl', 'wb') as f:
         pickle.dump((documents, embeddings), f)
 
+
     initialize_qa_chain(file_id)
 
+    if initial_query == "":
+        initial_query = "Give a brief about the document."
+        print("===> initial query is empty")
+    print(initial_query)
     
     answer = answer_question(initial_query)
 

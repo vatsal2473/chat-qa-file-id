@@ -1,0 +1,440 @@
+Springy AB Springy is an online marketplace for people to list, discover, and book diverse workspaces.
+
+Roles: Senior full stack developer/engineer: ? VP of Product: Sara Tavasolian Senior UX designer: Robert Karpavicius CPO: Daniel Beaven Start date: April 24/2023 Deadline: May 31/2023 Quality Assurance: June 5 - 9/2023 Website: springy.
+
+se Acceptance criteria: End-to-end functional marketplace Budget: Stage 1 - 13.
+
+485 SEK Stage 2 - 14.
+
+030 SEK Stage 3 - 12.
+
+500 SEK Total: 40 000 SEK Github Repository Figma UX/UI Frontend: React/Typescript Backend: CMS Sanity Firebase w = wait x = done s1 = Stage 1, 2 or 3 Grayed out and s4 are out of scope.
+
+Services: API Integration - [s2] AddtoAny - [s3] Review system - [s3] Accessibe - [s1] Auth0 (add Google and Apple sign in/ host and guest sign up has to be defined for Stripe) - [s1] Stripe - [s1] SendGrid Email API - [s1] Sentry - [x] Calendly - [x] Google Map - [x] Google Analytics - [x] Google Font - [w] Twilio Verify - [w] BankID High level scope - [s3] Website audit (Sara + Robert) - [s3] Usability testing (Sara + Dan) - [s3] Content upload - [s1] Dashboard host - very simple for onboarding to Stripe - [s2] E-commerce functionality - [s1] Payment processing - [s1] Opt-in form - [s1] Autoresponder integration - [s2] Speed optimisation - [s1] Hosting setup (Sanity is in place, AWS if needed) - [s3] Social media icons in the footer - [s3] Sitemap & robots.
+
+txt - [s3] SEO - [s3] Google Lighthouse - [s3] PWA - responsive design - [s3] Image optimisation - [s2] Translation/Localisation - [s2] Authentication and Security - [s1] Form Validation & Submission - [s2] Error messages - [s2] Blog page design - typeface formatting, spacing, font, rich text edit - [s2] Accessibility - [s3] UX/UI Front-end development - [s1] User avatar (auth0) - [s3] Usability testing (Sara + Robert) - [s3] Lighthouse Optimisation Detailed scope of work 1.
+
+Top level domain with HTTPs [s1] The site must have a top level domain with a secured connection.
+
+If the site exclusively serves a certain country, then use a country code domain.
+
+2.
+
+Business logo Done A business logo works as a communication tool which is crucial to make a strong first impression.
+
+Place the business logo in a prominent position on the header.
+
+Preferably near the left is considered an ideal spot.
+
+Consider the size, background and format as well.
+
+3.
+
+User-friendly navigation [s3] A clear navigation bar improves the UX of the site – mandatory for every page.
+
+A simple navigation structure turns the website understandable as it requires less effort and brain work.
+
+However, it requires careful consideration to design your website navigation.
+
+4.
+
+Wishlist [s3] Sometimes, a customer may be interested in a product but decide to reserve it later.
+
+Or a customer may find a product interesting and want to check that later for more details.
+
+A wishlist allows them to store a list of these products so that they can easily find them the next time they visit the site.
+
+5.
+
+Customer login.
+
+Stripe Let the customers register and log in.
+
+The login features assist customers in tracking their bookings effortlessly.
+
+Place this on the top nav bar/user avatar dropdown/ for easy access.
+
+When user sign in or log in, indicate the change of states in the UI.
+
+6.
+
+Workspace finder - address or map.
+
+Done Workspace locator at each host listing make them easy for your customers to find.
+
+They might look for the feature to confirm details like holiday closings, business hours or other location-specific amenities.
+
+7.
+
+Language options/Translation/Localisation [s2] Include language options to let users switch between different languages/regions.
+
+SV/EN 8.
+
+CTA Book workspace [s1] This feature works as an intermediary between the product page and the checkout process.
+
+9.
+
+Search bar Optimise the search bar properly, it can become a powerful tool for conversions.
+
+Alongside helping our visitors to find what they need, a search bar will let us understand what people want from Springy.
+
+10.
+
+Phone number Whether it be enquiring about a particular product or clarifying business hours, customers may need to call us for various reasons.
+
+Mentioning the contact number at the top makes this easy for them.
+
+11.
+
+Highlighted UVP Why should a customer buy from you and not your competitors? Use Unique Value Propositions or UVPs to mention those things about your business that make it special.
+
+12.
+
+Risk reducers /Hedvig Insurance [s4] Sara Include a few good risk reducers, such as Insurance safety for host and guests and return offers, at this point to attract your potential customers.
+
+13.
+
+Loyalty program [s4] Mention things like reward points and other special offers for a long-time customers.
+
+Include a link that takes them to a more detailed offer page.
+
+14.
+
+CTA to push people to product collections and important sales pages Include important product categories and relevant Call To Action buttons here.
+
+Use wordings that describe what the CTA does, like “Add to cart”, “Buy Now”, or “Checkout”.
+
+You may also provide links to sales and special offers pages.
+
+15.
+
+Featured or Nearby spaces [s4] We may manually add featured products or automate the process to show a list of best-selling spaces here.
+
+16.
+
+Personalised items We can show potential customers items based on their search or purchasing history.
+
+This is a very effective way to increase sales and revenues significantly.
+
+17.
+
+Text content [s3] From an SEO perspective, including some description of the business is important.
+
+Also, a potential new customer will be able to quickly know about us from this.
+
+18.
+
+FAQ, returns and reschedule, etc.
+
+Done These pages are important for your customers.
+
+So provide links to them at the footer with a title, something like Customer care can be appropriate.
+
+19.
+
+Contact us Done It’s good to provide several ways to contact your business to make it very convenient for site users to get in touch with us.
+
+Phone, email and inquiry form submission are three common ones.
+
+20.
+
+Newsletter signup [s1] Have a newsletter signup form that collects our customers’ email addresses.
+
+We can send them special offers and inform new product arrivals.
+
+21.
+
+Payment system icons [s1] It’s customary to include payment system icons at the bottom of the page.
+
+This lets our customers quickly know which payment systems you accept.
+
+22.
+
+Social Media links Done (remove TikTok) add Twitter https://twitter.
+
+com/home Providing links to our social media accounts at the bottom of the page lets the customers stay connected.
+
+Adding social media links improves our digital presence while getting the user interaction right.
+
+23.
+
+Link to About pages Done Shoppers who are interested in the company’s mission often tend to navigate to an About us page.
+
+Here we may include a link to a more detailed About us page, including affiliate, press and career pages.
+
+24.
+
+Terms and Conditions, Privacy Policy, Sitemap.
+
+Done Look for the clearest and most prominent placement where it will be easy to notice and always be attainable.
+
+These standard documents and the sitemap can be placed at the bottom of the page.
+
+25.
+
+Live Chat Live chat is common on many sites nowadays.
+
+When it comes to providing high-quality customer service, adding a chat service does the best.
+
+But to implement and maintain a proper live chat option requires careful planning and resources.
+
+Product Category Page Features List 26.
+
+Consistent image size [s3] The product images on a category page should have a consistent size.
+
+It’s not just about the resolution; they should have a similar amount of whitespace at the borders too.
+
+27.
+
+Breadcrumb navigation Done (needs fixing) Breadcrumb navigation helps visitors easily browse through product categories.
+
+Include it right below the main navigation bar.
+
+28.
+
+Show the number of products displayed on the page [s4] Generally, a page can’t show all the products that there are under a certain category.
+
+But every page should show the customers the total number of products and the range that they are viewing.
+
+29.
+
+Product filtering and sorting [s4] Product filtering allows customers to filter products based on different attributes.
+
+For example, a clothing store may use gender, size, colour etc.
+
+, as its filtering options.
+
+The sorting allows viewing products in ascending or descending order of price and arrival.
+
+30.
+
+Page description field SEO [s3] In this part, include a short general description of the category.
+
+This is mostly for search engines as it helps to rank in search results.
+
+So we can optimise the page description with any targeted keywords while providing important information about the category page.
+
+Product Page Features List 31.
+
+Product Title - Workspace title Done This is simply the name of the product.
+
+The name of each product should definitely be unique, but maybe with different colours and sizes, if applicable.
+
+32.
+
+Good quality images with zoom-in functionality Needs improvement [s3] On the product pages, there should be high-quality images that can be zoomed in to view particular parts of the product.
+
+33.
+
+Pricing information (with potential sales or discounts) Done Apart from mentioning the product price, it’s a good idea to mention if there are any discounts or promotional offers.
+
+The common practice is to strike through the previous price and write the new price with the discount percentage in brackets.
+
+34.
+
+A field to change date quantities MUST HAVE [s2] Just below the product price, there should be an option to change the date/guest quantity.
+
+That way, the customers can easily select the number of days they want to book.
+
+35.
+
+Product variables/ workspace description Done Some variables, like the size of a physical spaces, amenities should be visible.
+
+36.
+
+Book workspace button Done The Book workspace button should be prominently displayed beside the product image.
+
+The option adds more charm to the customer’s online shopping experience.
+
+37.
+
+Trust signal around the “Book workspace” button It’s a very good idea to mention a few trust signals near the Add to Cart button.
+
+This influences the subconscious of the customers in making the purchasing decision.
+
+38.
+
+Social share buttons for each profile page [s3] Let our customers share their favourite products.
+
+Adding social share (and sending links via email) buttons is a really great way to reach more people.
+
+We can implement the buttons beside the multimedia views of our share-worthy products.
+
+39.
+
+Product description Done Product descriptions and specifications are absolutely essential parts of the page.
+
+Try to include all the essential information a customer may look for.
+
+Use natural language and powerful words, and focus on the benefits.
+
+40.
+
+Consumer reviews on products [s3] This part will let the customers read, rate and give reviews of products.
+
+As we have shown, the average rating and number of reviews should also be shown right below the product name above.
+
+41.
+
+Related products Include a list of related products at the bottom of the page.
+
+Using related item recommendations will provide a more satisfying and personalised experience.
+
+This may prompt the customer to find the product that he/she wants.
+
+Customer Checkout, Shopping Cart and Wishlist [s1] 42.
+
+Accept all payment methods Done Site should accept most of the payment methods that are popular among your customers.
+
+Provide the option to generate the invoice and accept payment instantly.
+
+43.
+
+Cart details Mention all details regarding what the customer has in the cart.
+
+It should definitely be the host name, dates, price and number of guests .
+
+44.
+
+Final price Obviously, after mentioning the price of each individual product, your checkout page should also mention the total price.
+
+Don’t forget to mention the individual amounts of discount, shipping cost and tax.
+
+45.
+
+Directions UX Your customers will find multiple route options very convenient.
+
+There should be at least one map included.
+
+Include distance.
+
+46.
+
+Host/company address on profile page Add host address instead of city and location 47.
+
+Security seals Show security seals near the field where the customers enter their credit card information.
+
+These security seals or trust badges help to convince your customers about the security of your site and the payment process.
+
+48.
+
+Include an area to punch in promo codes Your business may occasionally provide promo codes to customers.
+
+This field is where customers may apply the promo codes to get discounts or other privileges.
+
+49.
+
+Have the option to change the quantity or remove items Also, provide an option to edit and remove items from the checkout page.
+
+How long until the session ends and user needs to go back and book again? Ecommerce Blog Features List 50.
+
+Sidebar: blog search, categories, popular posts The sidebar of your blog page should have a search bar, a list of categories (organising the blog posts) and a list of the most popular posts.
+
+This can be placed at the top left of your web page’s primary content area.
+
+51.
+
+Social share buttons Let your readers share the posts they like using social share buttons.
+
+Maximise your social media exposure on your blog and increase your blog traffic as well.
+
+Back-end Features List [s1] 52.
+
+ Dashboard/reporting tools The dashboard should allow you to view all metrics in a summarised way.
+
+It should be customised to meet your specific business needs.
+
+Upcoming, canceled, booked 53.
+
+Administrator management Usually, a website will have a number of managers.
+
+You, as the owner, should be able to decide who can access which part.
+
+54.
+
+Account management Managing customer orders and their account information is a mandatory feature.
+
+It’s better to store customers’ search history too.
+
+That may help you to provide personalised offers to frequent visitors.
+
+55.
+
+Store/Host profile management Product specifications, like – categories, descriptions, sizes etc.
+
+, should be very easily editable from the backend of your site without assistance from a developer.
+
+You should also be able to select the featured products.
+
+56.
+
+Content management The pages of your site, their layouts, your blog and other contents of your site should be manageable from the backend without any manual change in the code of the site.
+
+57.
+
+User management At any certain time, an marketplace site will obviously have lots of orders in the process at different stages.
+
+It also needs to handle different journey processes.
+
+All of these should be easily manageable from the backend.
+
+58.
+
+Payment, taxes and location management Your site’s backend platform should be easily able to manage different payment processes, calculate and apply taxes, and determine the price structure based on locations.
+
+59.
+
+SEO management Aspects of SEO, like URL editing, title tag, meta description management etc.
+
+, are common parts of an backend platform.
+
+60.
+
+Email marketing integration Usually, backend management platforms can have email marketing features integrated into them.
+
+Sorting and storing customer emails and sending personalised emails are very useful to increase conversions.
+
+61.
+
+Discount and promotion management Applying varying discounts and introducing different promotional offers becomes a lot more hassle-free if your backend provides these facilities.
+
+62.
+
+Root file upload Uploading files directly to the root of your site may often be needed.
+
+And your backend should make the process simple.
+
+63.
+
+Tracking code integration You should have the ability to upload files like robots.
+
+txt, tracking codes and other third-party verification codes without help from a developer.
+
+64.
+
+Responsive design It should go without saying that designing a responsive website is a mandatory skill for any Melbourne web design company.
+
+Regardless of device size, your site should be flexible enough to provide the best user experience.
+
+65.
+
+Browser compatibility Make sure your site is properly rendered in all major browsers.
+
+Otherwise, it will be challenging for your users to engage with content, and this will impact your conversion rate and site traffic.
+
+66.
+
+Fast loading Page loading speed is a crucial factor both from the perspective of user experience and SEO.
+
+Customers will definitely leave a site if it takes more time to load.
+
+67.
+
+Multilevel security Security is always one of the most important aspects of our business.
+
+Apart from SSL certificates and PCI compliance, the site should have a strong firewall and layers of security on login and contact forms.
+
+68.
+
+Automatic site backup The site should be automatically backed up to prevent any accidental mishap.
+

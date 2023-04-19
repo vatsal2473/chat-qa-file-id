@@ -1,0 +1,167 @@
+i will give you a objective you need to generate instructions for writing main code and test code for that objective. Remember not to generate any code, just generate these instructions to create the main and test code, in main code don't take or accept input from user as the user won't be able to give input since all the tests will be automated when running the test file only also when you generate instructions for test code pass all the data from test code only using list, dictionary, tuples, etc don't create any useless file such as txt, csv, png etc and in main code also don't read from any file instead accept the raw data only from the test code, also and don't generate instructions for code which run for infinite time
+
+
+1) main.py - Main code
+a. Import necessary libraries (e.g., math).
+
+b. Define a function, calculate_pi(n), which takes an integer n as an argument.
+
+c. Add input validation to ensure that n is between 1 and 50.
+
+d. Implement an algorithm to calculate PI up to the Nth decimal place. You can use algorithms like the Gauss-Legendre algorithm, the Chudnovsky algorithm, or any other method that suits your needs.
+
+e. Return the calculated PI value as a string.
+
+f. Create a user input section that takes an integer input for the number of decimal places.
+
+g. Call the calculate_pi(n) function with the user's input and print the result.
+
+2) test.py - Test code
+a. Import the necessary testing libraries (e.g., unittest).
+
+b. Import the calculate_pi function from main.py.
+
+c. Create a test class that inherits from unittest.TestCase.
+
+d. Define test cases within the test class to cover various scenarios:
+
+Test for valid input, ensuring the function returns the correct PI value.
+Test for invalid input (e.g., negative values, values greater than the allowed maximum, non-integer input), making sure the function raises the appropriate exceptions.
+e. Add a main function to run the test cases.
+
+
+
+[['Find PI to the Nth Digit - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.',
+  'pass',
+  4]]
+  
+  
+  [['Find e to the Nth Digit - Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places. Keep a limit to how far the program will go.',
+  'fail',
+  5],
+ ['Fibonacci Sequence - Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.',
+  'pass',
+  1],
+ ['Prime Factorization - Have the user enter a number and find all Prime Factors (if there are any) and display them.',
+  'pass',
+  1],
+ ['Next Prime Number - Have the program find prime numbers until the user chooses to stop asking for the next one.',
+  'pass',
+  4],
+ ['Find Cost of Tile to Cover W x H Floor - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.',
+  'pass',
+  2]]
+  
+  [['Change Return Program - The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.',
+  'fail',
+  5]]
+  
+  [['Calculator - A simple calculator to do basic operators. Make it a scientific calculator for added complexity.',
+  'fail',
+  5],
+ ['Unit Converter (temp, currency, volume, mass and more) - Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.',
+  'fail',
+  5],
+ ['Alarm Clock - A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.',
+  'fail',
+  5],
+ ['Distance Between Two Cities - Calculates the distance between two cities and allows the user to specify a unit of distance. This program may require finding coordinates for the cities like latitude and longitude.',
+  'fail',
+  5],
+ ['Credit Card Validator - Takes in a credit card number from a common credit card vendor (Visa, MasterCard, American Express, Discoverer) and validates it to make sure that it is a valid number (look into how credit cards use a checksum).',
+  'pass',
+  1],
+ ['Tax Calculator - Asks the user to enter a cost and either a country or state tax. It then returns the tax plus the total cost with tax.',
+  'pass',
+  1],
+ ['Factorial Finder - The Factorial of a positive integer, n, is defined as the product of the sequence n, n-1, n-2, ...1 and the factorial of zero, 0, is defined as being 1. Solve this using both loops and recursion.',
+  'pass',
+  1],
+ ['Complex Number Algebra - Show addition, multiplication, negation, and inversion of complex numbers in separate functions. (Subtraction and division operations can be made with pairs of these operations.) Print the results for each operation tested.',
+  'pass',
+  3],
+ ['Happy Numbers - A happy number is defined by the following process. Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers. Display an example of your output here. Find first 8 happy numbers.',
+  'fail',
+  5],
+ ["Number Names - Show how to spell out a number in English. You can use a preexisting implementation or roll your own, but you should support inputs up to at least one million (or the maximum value of your language's default bounded integer type, if that's less). Optional: Support for inputs other than positive integers (like zero, negative integers, and floating-point numbers).",
+  'pass',
+  5],
+ ['Coin Flip Simulation - Write some code that simulates flipping a single coin however many times the user decides. The code should record the outcomes and count the number of tails and heads.',
+  'pass',
+  1],
+ ['Limit Calculator - Ask the user to enter f(x) and the limit value, then return the value of the limit statement Optional: Make the calculator capable of supporting infinite limits.',
+  'fail',
+  5],
+ ['Fast Exponentiation - Ask the user to enter 2 integers a and b and output a^b (i.e. pow(a,b)) in O(lg n) time complexity.',
+  'pass',
+  1]]
+  
+  
+  
+  ## Classic algorithms
+  
+  [['Collatz Conjecture - Start with a number n > 1. Find the number of steps it takes to reach one using the following process: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1.',
+  'fail',
+  5],
+ ['Sorting - Implement two types of sorting algorithms: Merge sort and bubble sort.',
+  'pass',
+  2],
+ ['Closest pair problem - The closest pair of points problem or closest pair problem is a problem of computational geometry: given n points in metric space, find a pair of points with the smallest distance between them.',
+  'fail',
+  5],
+ ['Sieve of Eratosthenes - The sieve of Eratosthenes is one of the most efficient ways to find all of the smaller primes (below 10 million or so).',
+  'pass',
+  1]]
+  
+  ## Graph
+  
+  [['Eulerian Path - Create a program which will take as an input a graph and output either a Eulerian path or a Eulerian cycle, or state that it is not possible. A Eulerian Path starts at one node and traverses every edge of a graph through every node and finishes at another node. A Eulerian cycle is a eulerian Path that starts and finishes at the same node.',
+  'fail',
+  5],
+ ['Connected Graph - Create a program which takes a graph as an input and outputs whether every node is connected or not.',
+  'pass',
+  2],
+ ['Dijkstra’s Algorithm - Create a program that finds the shortest path through a graph using its edges.',
+  'fail',
+  5],
+ ['Minimum Spanning Tree - Create a program which takes a connected, undirected graph with weights and outputs the minimum spanning tree of the graph i.e., a subgraph that is a tree, contains all the vertices, and the sum of its weights is the least possible.',
+  'fail',
+  5]]
+  
+  
+  ## text
+  
+  [['Fizz Buzz - Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.',
+  'pass',
+  4],
+ ['Reverse a String - Enter a string and the program will reverse it and print it out.',
+  'pass',
+  1],
+ ['Pig Latin - Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for more information on rules.',
+  'pass',
+  1],
+ ['Count Vowels - Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found.',
+  'pass',
+  2],
+ ['Check if Palindrome - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”',
+  'fail',
+  5],
+ ['Count Words in a String - Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.',
+  'fail',
+  5],
+ ['Text Editor - Notepad style application that can open, edit, and save text documents. Optional: Add syntax highlighting and other features.',
+  'pass',
+  4],
+ ['RSS Feed Creator - Given a link to RSS/Atom Feed, get all posts and display them.',
+  'pass',
+  5]]
+  
+  [['Guestbook / Journal - A simple application that allows people to add comments or write journal entries. It can allow comments or not and timestamps for all entries. Could also be made into a shout box. Optional: Deploy it on Google App Engine or Heroku or any other PaaS (if possible, of course).',
+  'fail',
+  5],
+ ['Vigenere / Vernam / Ceasar Ciphers - Functions for encrypting and decrypting data messages. Then send them to a friend.',
+  'fail',
+  5],
+ ['Regex Query Tool - A tool that allows the user to enter a text string and then in a separate control enter a regex pattern. It will run the regular expression against the source text and return any matches or flag errors in the regular expression.',
+  'pass',
+  1]]
