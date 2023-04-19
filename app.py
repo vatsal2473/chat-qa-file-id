@@ -47,6 +47,7 @@ def answer_question(query):
 def analyze_documents():
     global documents
     file_id = request.form.get('file_id')
+    initial_query = request.form.get('initial_query')
     file = request.files['file']
     filename = file.filename
     # file.save(filename)
@@ -82,7 +83,11 @@ def analyze_documents():
         pickle.dump((documents, embeddings), f)
 
     initialize_qa_chain(file_id)
-    return jsonify({"message": "Documents analyzed and QA chain initialized."})
+
+    
+    answer = answer_question(initial_query)
+
+    return jsonify({"message": "Documents analyzed and QA chain initialized.", "answer": answer})
 
 import chat_gpt
 @app.route('/chatqa', methods=['POST'])
