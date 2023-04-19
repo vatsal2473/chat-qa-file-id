@@ -30,10 +30,6 @@ def initialize_qa_chain(file_id):
 
     with open(f'pkl_files/{file_id}.pkl', 'rb') as f:
         documents, embeddings = pickle.load(f)
-    # with open('pkl_files/documents/'+file_id+'.pkl', 'rb') as f:
-    #     documents = pickle.load(f)
-    # with open('pkl_files/embeddings/'+file_id+'.pkl', 'rb') as f:
-    #     embeddings = pickle.load(f)
 
     vectorstore = Chroma.from_documents(documents, embeddings)
 
@@ -84,15 +80,11 @@ def analyze_documents():
     # Save documents and vectorstore as a pickle file
     with open(f'pkl_files/{file_id}.pkl', 'wb') as f:
         pickle.dump((documents, embeddings), f)
-    # with open('pkl_files/documents/'+file_id+'.pkl', 'wb') as f:
-    #     pickle.dump(documents, f)
-    # with open('pkl_files/embeddings/'+file_id+'.pkl', 'wb') as f:
-    #     pickle.dump(embeddings, f)
 
-    # os.remove(filename)
     initialize_qa_chain(file_id)
     return jsonify({"message": "Documents analyzed and QA chain initialized."})
 
+import chat_gpt
 @app.route('/chatqa', methods=['POST'])
 def chatqa():
     global chat_history
@@ -100,7 +92,17 @@ def chatqa():
     file_id = request.form.get('file_id')
     chat_history = []
     initialize_qa_chain(file_id)
-    answer = answer_question(query)
+
+    adv_query = "Answer the question in detail, and if you dont know the answer just answer 'i dont know the answer', Question: " + query
+    answer = answer_question(adv_query)
+
+    check_sentence = "i don't know the answer"
+    # find cosine similarity between the answer and the check sentence
+    similarity = answer['answer'].lower().find(check_sentence)
+    if similarity != -1:
+        print("===> answer not there in pdf")
+        answer['answer'] = chat_gpt.answer_question(query)
+
     return jsonify(answer)
 
 @app.route('/new_chat', methods=['POST'])
