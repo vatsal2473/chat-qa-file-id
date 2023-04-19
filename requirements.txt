@@ -6,3 +6,4 @@ chromadb
 tiktoken
 docx2txt
 pypdf2
+openai
