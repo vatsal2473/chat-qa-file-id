@@ -112,7 +112,7 @@ def chatqa():
     chat_history = []
     initialize_qa_chain(file_id)
 
-    adv_query = starting_prompt + ' ' +query
+    adv_query = starting_prompt + ' ' + query
     answer = answer_question(adv_query)
 
     check_sentence = "i don't know the answer"
