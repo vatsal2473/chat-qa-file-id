@@ -40,7 +40,7 @@ def initialize_qa_chain(file_id):
 def answer_question(query):
     global chat_history
     result = qa({"question": query, "chat_history": chat_history})
-    chat_history.append((query, result["answer"]))
+#     chat_history.append((query, result["answer"]))
     return result
 
 @app.route('/analyze_documents', methods=['POST'])
